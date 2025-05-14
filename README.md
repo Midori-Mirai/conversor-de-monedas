@@ -1,5 +1,5 @@
 <h1 align="center"> Conversor de monedas </h1>
-![conversor de monedas - copia](https://github.com/user-attachments/assets/6e846888-f5d1-4ac3-8c48-b2101a9327cc)
+![Portada-conversor-de-monedas](https://github.com/user-attachments/assets/748fc798-32c7-40a9-a84d-2c55da2f4f82)
 
 
 ## [:page_with_curl:Descripción del proyecto](#hola)
