@@ -6,6 +6,8 @@ import com.alura.cursos.herramientas.ExtraerMoneda;
 import com.alura.cursos.herramientas.GuardarHistorial;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,6 +15,8 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        LocalDateTime hora = LocalDateTime.now();
+        DateTimeFormatter formatoDeTiempo = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         int contador = 0;
         int opcion;
         int seleccion = 0;
@@ -39,7 +43,7 @@ public class Principal {
                     "5) - Peso Mx a Soles peruanos (MXN a PEN)\n" +
                     "6) - Soles peruanos a Peso MX (PEN a MXN)\n" +
                     "7) - Ver el historial de conversiones\n" +
-                    "8) - Guardar el historial - la aplicación finalizará" +
+                    "8) - Guardar el historial - la aplicación finalizará\n" +
                     "°°°° Elige la opción que deseas usar - Si deseas salir escribe 0: °°°°");
             opcion = entrada.nextInt();
 
@@ -87,8 +91,10 @@ public class Principal {
             moneda = monedaDeCambio.filtrarMoneda(json,currencyCode);
             resultadoDeLaConversion = convertir.convertirEntreMonedas(moneda, cantidad,seleccion) ;
             contador++;
-            System.out.println("Conversión final: " + resultadoDeLaConversion);
-            String registro = "Conversión " + contador + " -> " + cantidad
+            System.out.println("Conversión final: " + resultadoDeLaConversion
+                    + (seleccion == 1 ? " " + currencyCode : " MXN"));
+            String registro = "[" + hora.format(formatoDeTiempo) + "]"
+                    + "Conversión " + contador + " -> " + cantidad
                     + (seleccion == 1 ? " MXN a " + currencyCode : " " + currencyCode + " a MXN")
                     + " es: " + resultadoDeLaConversion;
             historial.add(registro);
