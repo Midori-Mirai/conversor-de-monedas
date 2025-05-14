@@ -32,11 +32,9 @@
 - `Funcionalidad 2`: Puedes revisar el historial en cualquier momento
 - `Funcionalidad 3`: Puedes guardar el historial con el nombre que indiques
 - `Funcionalidad 4`: El archivo se guarda en formato Json
-![conversor-de-monedas – Principal java 2025-05-13 18-10-06](https://github.com/user-attachments/assets/2598b657-3e9f-44d6-8bbb-9eeef2bc9d51)
-
+![conversor-de-monedas – Principal.java 2025-05-13 18-10-06.gif](assest/conversor-de-monedas%20%E2%80%93%20Principal.java%202025-05-13%2018-10-06.gif)
 ## [:link:Acceso al proyecto](#acceso-proyecto)
-![qr conversor de monedas](https://github.com/user-attachments/assets/d0df4515-bb46-4a76-a2a7-3ee636b5d3d2)
-
+![qr conversor de monedas.png](assest/qr%20conversor%20de%20monedas.png)
 <ul>
   <li>https://github.com/Midori-Mirai/conversor-de-monedas</li>
 </ul> 
