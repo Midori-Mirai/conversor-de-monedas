@@ -1,6 +1,6 @@
 <h1 align="center"> Conversor de monedas </h1>
-![Portada-conversor-de-monedas](https://github.com/user-attachments/assets/748fc798-32c7-40a9-a84d-2c55da2f4f82)
 
+![Portada-conversor-de-monedas.png](assest/Portada-conversor-de-monedas.png)
 
 ## [:page_with_curl:Descripción del proyecto](#hola)
 **<p>Este proyecto es un conversor de monedas :moneybag: entre cuatro diferentes divisas, la base es el peso mexicano y se puede convertir a: 
